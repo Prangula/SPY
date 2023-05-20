@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".InfoActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_info"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="თამაშის წესები"
+        app:titleTextColor="@color/white"
+        android:background="@color/grey"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="  1. მოგესალმებით, ჯაშუში არის ვირტუალური სამაგიდო თამაში, რომლის თამაშიც ნებისმიერ ადგილზე
+არის შესაძლებელი. სათამაშოდ მხოლოდ მეგობრები და კარგი ატმოსფეროა საჭირო. თამაშში ვხვდებით ორი ტიპის მოთამაშეს:
+აგენტს და ჯაშუშს. აგენტების მიზანია ჯაშუშის გამოაშკარავება, ჯაშუში კი შესაბამისად უნდა შეეცადოს, რომ კარგად შეინიღბოს.
+ყველა აგენტი მიიღებს ერთნაირ სიტყვას. როდესაც წაიკითხავთ სიტყვას, დაიმახსოვრეთ და შეინახეთ ის საიდუმლოთ. რაც შეეხება
+ჯაშუშს, ის სიტყვას არ მიიღებს.\n\n  2. ამის შემდეგ ვიწყებთ კითხვების ნაწილს. შეეცადეთ ერთმანეთს მაქსიმალურად ბევრი შეკითხვა დაუსვათ
+, რათა გამოიცნოთ დაშიფრული სიტყვა. აგენტების მიზანია, რომ კითხვების საშუალებით გამოამჟღავნონ ჯაშუში, რომელიც ცდილობს
+მოტყუებას, რომ მან სიტყვა იცის. \n\n
+  3. დროის ამოწურვის შემდეგ აგენტებმა უნდა დაასახელონ ჯაშუში. იმ შემთხვევაში თუ მოთამაშეების უმეტესობა ჯაშუშად აგენტს
+აირჩევს მაშინ აგენტები წააგებენ თამაშს."
+        android:textSize="17sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

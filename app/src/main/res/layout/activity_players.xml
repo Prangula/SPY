@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".PlayersActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_players"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="მოთამაშეები"
+        app:titleTextColor="@color/white"
+        android:background="@color/grey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="აირჩიეთ მოთამაშეების\n რაოდენობა"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/carbon"
+        android:layout_marginTop="75dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+
+        <android.widget.Button
+            android:id="@+id/btn_minus_players"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button"
+            android:text="-"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/carbon"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            android:layout_marginStart="20dp"
+
+            />
+
+        <android.widget.Button
+            android:id="@+id/btn_plus_players"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button"
+            android:text="+"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/carbon"
+           android:layout_marginStart="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/btn_accept_players"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="დადასტურება"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/carbon"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+
+
+
+        />
+
+
+
+</LinearLayout>
