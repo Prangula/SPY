@@ -38,6 +38,7 @@ class GameActivity : AppCompatActivity() {
             intent.putExtra("playerNumber",playerNumber)
             intent.putExtra("spyNumber",spyNumber)
             intent.putExtra("timerNumber",timerNumber)
+            countDownTimer!!.cancel()
             startActivity(intent)
         }
 
@@ -47,6 +48,7 @@ class GameActivity : AppCompatActivity() {
             intent.putExtra("playerNumber",playerNumber)
             intent.putExtra("spyNumber",spyNumber)
             intent.putExtra("timerNumber",timerNumber)
+            countDownTimer!!.cancel()
             startActivity(intent)
 
         }
@@ -117,6 +119,8 @@ class GameActivity : AppCompatActivity() {
 
 
     }
+
+
 
 
 }
