@@ -15,6 +15,7 @@ class GameActivity : AppCompatActivity() {
     private lateinit var spyNumber:String
     private lateinit var timerNumber:String
 
+
     private var countDownTimer: CountDownTimer? = null
     private var timerDuration: Long = 60000
     private var pauseOffSet: Long = 0
@@ -40,6 +41,7 @@ class GameActivity : AppCompatActivity() {
             intent.putExtra("timerNumber",timerNumber)
             countDownTimer!!.cancel()
             startActivity(intent)
+            finish()
         }
 
         btn_menu.setOnClickListener {
@@ -50,6 +52,7 @@ class GameActivity : AppCompatActivity() {
             intent.putExtra("timerNumber",timerNumber)
             countDownTimer!!.cancel()
             startActivity(intent)
+            finish()
 
         }
 
